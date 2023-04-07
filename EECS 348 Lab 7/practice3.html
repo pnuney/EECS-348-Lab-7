@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>Practice 3</title>
+   </head>
+   <body>
+       <h1>EECS 348 Lab 7 Practice 3</h1>
+       Enter password:
+       <input type = "text" id = "password" value>
+       <p></p>
+       Retype password:
+       <input type = "text" id = "retype" value>
+       <p></p>
+       <button onclick = "verify()">Verify Password</button>
+
+       <script>
+           function verify() {
+           var password = document.getElementById("password").value;
+           var retype = document.getElementById("retype").value;
+
+
+           if (password.length < 8) {
+               alert("Make a password that is at least 8 characters long");
+           } else if (password !== retype) {
+               alert("The passwords are not matched");
+           } else {
+               alert("The passwords are matched");
+           }
+           }
+       </script>
+      
+   </body>
+</html>

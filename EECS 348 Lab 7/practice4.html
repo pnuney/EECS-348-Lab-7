@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practice 4</title>
+</head>
+<body>
+    <h1>EECS 348 Lab 7 Practice 4</h1>
+
+    <form method="get" action="mTable.php">
+        <label for="number">Enter a size for the table:</label>
+        <input type="number" name="number" id="number" required>
+        <button type="submit">Make table</button>
+    </form>
+
+    <?php
+        if (isset($_GET["number"])) {
+            include("mTable.php");
+        }
+    ?>
+</body>
+</html>
